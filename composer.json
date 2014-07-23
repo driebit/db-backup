@@ -1,0 +1,30 @@
+{
+    "name": "driebit/db-backup",
+    "type": "library",
+    "description": "Create and restore database backups with PHP",
+    "keywords": [ "database", "db", "mysql", "sqlite" ],
+    "homepage": "https://github.com/driebit/db-backup",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Driebit",
+            "homepage": "http://www.driebit.nl",
+            "email": "tech@driebit.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/process": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Driebit\\DbBackup\\": "src/",
+            "Driebit\\DbBackup\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
