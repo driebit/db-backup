@@ -27,7 +27,8 @@ class MongoDumpBackup extends AbstractCliBackup
     public function restore($database, $file, array $params = array())
     {
         $arguments = array(
-            $file
+            $file,
+            '--host', $this->host
         );
 
         if (isset($params['drop'])) {
